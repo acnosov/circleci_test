@@ -1,0 +1,20 @@
+version: 2
+
+jobs:
+  py37:
+    docker:
+      - image: circleci/python:3.7
+    steps:
+      - checkout
+      - run:
+          command: |
+            python .
+#workflows:
+#  version: 2
+#
+#  test:
+#    jobs:
+#      - pep8
+#      - py27
+#      - py36
+#      - py37
