@@ -1,10 +1,11 @@
-name: Python application
+name: Local CI/CD
 on: [push]
 jobs:
   local_test:
     runs-on: self-hosted
     steps:
-      - run: python -V
+      - name: Test chell
+        run: python -V | python -V
 #        echo This job does specify a container.
 #        echo It runs in the container instead of the VM.
 #        name: Run in container
