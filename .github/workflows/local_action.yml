@@ -9,6 +9,7 @@ jobs:
         run: |
           python -m venv tutorial-env
           python -m pip -V
+          echo Fuck off
 
 #        echo This job does specify a container.
 #        echo It runs in the container instead of the VM.
