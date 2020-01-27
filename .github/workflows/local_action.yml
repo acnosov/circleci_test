@@ -4,8 +4,9 @@ jobs:
   local_test:
     runs-on: self-hosted
     steps:
+      - uses: actions/checkout@v2
       - name: Test chell
-        run: python -V | python -V
+        run: ls
 #        echo This job does specify a container.
 #        echo It runs in the container instead of the VM.
 #        name: Run in container
