@@ -6,8 +6,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Test chell
+        shell: bash
         run: |
           python -m venv tutorial-env
+          tutorial-env\Scripts\activate.bat
           python -m pip -V
           echo Fuck off
 
