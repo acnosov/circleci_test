@@ -32,7 +32,6 @@ jobs:
 
   container:
     runs-on: self-hosted
-    container: python:slim
     steps:
       - run: echo This job does specify a container.
 #        echo This job does specify a container.
