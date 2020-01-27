@@ -6,7 +6,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Test chell
-        run: ls
+        run: |
+          python -m venv tutorial-env
+          python -m pip -V
+
 #        echo This job does specify a container.
 #        echo It runs in the container instead of the VM.
 #        name: Run in container
